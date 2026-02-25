@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Production-ready, fully responsive, mobile-first travel website for STC – South Indian Tour Crafters. Premium Kerala tourism style with sticky header, hero section, Instagram-style destination highlights, packages with full itineraries, testimonials, WhatsApp/Call CTAs, and sticky mobile bottom nav. Color theme: Primary Green #1B5E3C, Accent Orange #F28C28, White background. Font: Poppins/Inter.",
+  "architectural_notes": [
+    "Single-file HTML/CSS/JS structure; Poppins or Inter font via Google Fonts",
+    "Color tokens: Primary Green #1B5E3C, Accent Orange #F28C28, Background White",
+    "Mobile-first layout with CSS Grid/Flexbox; sticky bottom nav hidden on desktop",
+    "Destination modals and itinerary accordions handled with minimal vanilla JS",
+    "Header background changed to white with dark/green text (updated from Primary Green #1B5E3C)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Use the uploaded file as-is, saving it as the hero background (Gemini_Generated_Image_ylgl2uylgl2uylgl.png > hero-houseboat.dim_1920x1080.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-sticky-header-with-the-stc-logo-use-generated-logo-asset-from-frontend-public-assets-generated-on-the-left-and-a-hamburger-menu-on-the-right-the-hamburger-menu-should-open-a-mobile-slide-in-nav-with-links-home-destinations-packages-about-contact-on-desktop-show-links-inline-use-primary-green-1b5e3c-as-the-header-background-with-white-text-logo",
+      "title": "Create a sticky header with the STC logo (use generated logo asset from frontend/public/assets/generated) on the left and a hamburger menu on the right. The hamburger menu should open a mobile slide-in nav with links: Home, Destinations, Packages, About, Contact. On desktop, show links inline. Use Primary Green (#1B5E3C) as the header background with white text/logo.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-full-screen-hero-section-with-the-kerala-houseboat-sunset-generated-image-as-the-background-with-a-dark-overlay-for-readability-display-h1-heading-your-kerala-story-starts-here-subheading-curated-kerala-travel-experiences-crafted-with-care-and-two-cta-buttons-view-packages-accent-orange-f28c28-rounded-and-whatsapp-now-primary-green-1b5e3c-rounded-buttons-should-have-soft-box-shadow",
+      "title": "Create a full-screen hero section with the Kerala houseboat sunset generated image as the background (with a dark overlay for readability). Display H1 heading 'Your Kerala Story Starts Here', subheading 'Curated Kerala travel experiences crafted with care.', and two CTA buttons: 'View Packages' (Accent Orange #F28C28, rounded) and 'WhatsApp Now' (Primary Green #1B5E3C, rounded). Buttons should have soft box-shadow.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-instagram-style-horizontally-scrollable-destination-highlights-row-with-circular-image-cards-roughly-80-90px-diameter-circles-and-destination-name-below-each-destinations-fort-kochi-munnar-alleppey-thekkady-varkala-vagamon-wayanad-each-circle-uses-its-corresponding-generated-destination-image-clicking-a-circle-opens-a-modal-showing-destination-name-short-description-and-a-bulleted-list-of-highlights-as-provided-include-a-close-button-on-the-modal",
+      "title": "Build an Instagram-style horizontally scrollable destination highlights row with circular image cards (roughly 80–90px diameter circles) and destination name below each. Destinations: Fort Kochi, Munnar, Alleppey, Thekkady, Varkala, Vagamon, Wayanad. Each circle uses its corresponding generated destination image. Clicking a circle opens a modal showing: destination name, short description, and a bulleted list of highlights as provided. Include a close button on the modal.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-packages-section-displaying-5-package-cards-in-a-responsive-grid-1-column-mobile-2-3-columns-desktop-each-card-shows-a-destination-image-package-name-route-destinations-covered-number-of-nights-a-summary-inclusions-list-private-ac-cab-professional-driver-premium-hotel-stay-daily-breakfast-houseboat-meals-sightseeing-airport-pickup-drop-a-starting-price-placeholder-a-whatsapp-now-button-accent-orange-and-a-view-details-button-primary-green-view-details-expands-a-collapsible-accordion-below-the-card-showing-the-full-day-by-day-itinerary-packages-3n-the-weekend-escape-4n-backwater-bliss-5n-mist-mountains-6n-the-grand-kerala-7n-the-complete-experience-with-their-respective-routes-and-itineraries-as-specified",
+      "title": "Build a Packages section displaying 5 package cards in a responsive grid (1 column mobile, 2–3 columns desktop). Each card shows: a destination image, package name, route (destinations covered), number of nights, a summary inclusions list (Private AC Cab, Professional Driver, Premium Hotel Stay, Daily Breakfast, Houseboat Meals, Sightseeing, Airport Pickup & Drop), a starting price placeholder, a 'WhatsApp Now' button (Accent Orange), and a 'View Details' button (Primary Green). 'View Details' expands a collapsible accordion below the card showing the full day-by-day itinerary. Packages: 3N 'The Weekend Escape', 4N 'Backwater Bliss', 5N 'Mist & Mountains', 6N 'The Grand Kerala', 7N 'The Complete Experience' with their respective routes and itineraries as specified.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-why-choose-stc-section-with-5-icon-caption-feature-cards-arranged-in-a-responsive-row-grid-private-cab-premium-stays-local-expertise-24-7-support-customized-trips-use-relevant-svg-or-emoji-icons-primary-green-color-for-icons-and-brief-one-line-captions-section-heading-why-choose-stc",
+      "title": "Create a 'Why Choose STC' section with 5 icon+caption feature cards arranged in a responsive row/grid: Private Cab, Premium Stays, Local Expertise, 24/7 Support, Customized Trips. Use relevant SVG or emoji icons, Primary Green color for icons, and brief one-line captions. Section heading: 'Why Choose STC'.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-testimonials-section-with-3-testimonial-cards-each-card-includes-a-customer-name-star-rating-5-stars-and-a-2-3-sentence-review-quote-praising-stc-s-kerala-tour-services-use-a-light-green-or-off-white-card-background-with-rounded-corners-and-soft-shadow-section-heading-what-our-travelers-say",
+      "title": "Add a Testimonials section with 3 testimonial cards. Each card includes a customer name, star rating (5 stars), and a 2–3 sentence review quote praising STC's Kerala tour services. Use a light green or off-white card background with rounded corners and soft shadow. Section heading: 'What Our Travelers Say'.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-full-width-cta-banner-section-with-heading-ready-to-explore-kerala-a-short-subtext-and-two-large-rounded-buttons-whatsapp-us-accent-orange-and-call-now-primary-green-the-banner-background-should-use-primary-green-1b5e3c-with-white-text",
+      "title": "Create a full-width CTA banner section with heading 'Ready to Explore Kerala?', a short subtext, and two large rounded buttons: 'WhatsApp Us' (Accent Orange) and 'Call Now' (Primary Green). The banner background should use Primary Green (#1B5E3C) with white text.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-footer-with-stc-south-indian-tour-crafters-brand-name-fort-kochi-kerala-address-quick-links-column-packages-destinations-contact-a-whatsapp-placeholder-link-a-phone-placeholder-link-and-an-instagram-icon-link-use-primary-green-1b5e3c-background-with-white-text",
+      "title": "Build a footer with: STC – South Indian Tour Crafters brand name, 'Fort Kochi, Kerala' address, Quick Links column (Packages, Destinations, Contact), a WhatsApp placeholder link, a phone placeholder link, and an Instagram icon link. Use Primary Green (#1B5E3C) background with white text.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobile-specific-features-1-a-sticky-bottom-navigation-bar-visible-only-on-mobile-small-screens-with-four-tabs-home-packages-whatsapp-call-using-icons-and-labels-2-a-floating-whatsapp-button-bottom-right-visible-on-all-screen-sizes-3-smooth-scrolling-behavior-for-all-internal-anchor-links-the-sticky-bottom-nav-should-be-hidden-on-tablet-desktop-breakpoints",
+      "title": "Implement mobile-specific features: (1) A sticky bottom navigation bar (visible only on mobile/small screens) with four tabs: Home, Packages, WhatsApp, Call — using icons and labels. (2) A floating WhatsApp button (bottom-right) visible on all screen sizes. (3) Smooth scrolling behavior for all internal anchor links. The sticky bottom nav should be hidden on tablet/desktop breakpoints.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-global-design-system-use-poppins-google-fonts-as-the-primary-font-apply-primary-green-1b5e3c-for-headings-and-primary-actions-accent-orange-f28c28-for-highlight-buttons-and-accents-white-background-for-all-main-sections-all-cards-must-have-rounded-corners-border-radius-16px-and-soft-box-shadows-ensure-the-layout-is-mobile-first-with-responsive-breakpoints-add-proper-h1-h2-h3-heading-hierarchy-throughout-the-page-for-seo-targeting-keywords-kerala-tour-packages-munnar-trip-alleppey-houseboat-fort-kochi-travel",
+      "title": "Apply global design system: use Poppins (Google Fonts) as the primary font. Apply Primary Green (#1B5E3C) for headings and primary actions, Accent Orange (#F28C28) for highlight buttons and accents, white background for all main sections. All cards must have rounded corners (border-radius: 16px) and soft box-shadows. Ensure the layout is mobile-first with responsive breakpoints. Add proper H1/H2/H3 heading hierarchy throughout the page for SEO (targeting keywords: Kerala tour packages, Munnar trip, Alleppey houseboat, Fort Kochi travel).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-all-generated-images-stc-logo-hero-background-destination-images-package-images-as-static-assets-from-frontend-public-assets-generated-and-reference-them-in-the-corresponding-components",
+      "title": "Render all generated images (STC logo, hero background, destination images, package images) as static assets from frontend/public/assets/generated and reference them in the corresponding components.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-header-component-background-colour-from-primary-green-1b5e3c-to-white-ffffff-update-nav-link-text-logo-and-any-icon-colours-to-use-primary-green-1b5e3c-so-they-remain-visible-against-the-white-background-ensure-the-scroll-shadow-effect-and-mobile-hamburger-menu-also-reflect-the-white-background-with-appropriately-contrasting-text-and-icon-colours",
+      "title": "Update the Header component background colour from Primary Green (#1B5E3C) to white (#FFFFFF). Update nav link text, logo, and any icon colours to use Primary Green (#1B5E3C) so they remain visible against the white background. Ensure the scroll-shadow effect and mobile hamburger menu also reflect the white background with appropriately contrasting text and icon colours.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-stc-logo-image-in-the-header-component-with-the-newly-uploaded-logo-image-save-the-uploaded-logo-as-a-static-asset-at-frontend-public-assets-generated-stc-logo-png-and-update-the-header-component-s-img-src-to-reference-this-new-file-ensure-the-logo-renders-clearly-on-the-white-header-background-with-appropriate-height-approximately-40-48px-tall-and-maintains-aspect-ratio",
+      "title": "Replace the current STC logo image in the Header component with the newly uploaded logo image. Save the uploaded logo as a static asset at frontend/public/assets/generated/stc-logo.png and update the Header component's img src to reference this new file. Ensure the logo renders clearly on the white header background with appropriate height (approximately 40–48px tall) and maintains aspect ratio.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-save-the-uploaded-houseboat-image-gemini-generated-image-ylgl2uylgl2uylgl-png-as-a-static-asset-at-frontend-public-assets-generated-hero-houseboat-png-and-update-the-hero-component-to-use-this-new-image-as-the-full-screen-background-replacing-the-existing-hero-background-image-maintain-the-existing-dark-overlay-for-readability",
+      "title": "Save the uploaded houseboat image (Gemini_Generated_Image_ylgl2uylgl2uylgl.png) as a static asset at frontend/public/assets/generated/hero-houseboat.png and update the Hero component to use this new image as the full-screen background, replacing the existing hero background image. Maintain the existing dark overlay for readability.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-hero-component-remove-the-three-summary-stat-items-500-happy-travellers-7-destinations-and-5-star-review-along-with-any-surrounding-container-or-divider-elements-used-solely-to-display-those-stats-the-heading-subheading-and-cta-buttons-must-remain-unchanged",
+      "title": "In the Hero component, remove the three summary stat items — '500+ Happy Travellers', '7 Destinations', and '5 Star Review' — along with any surrounding container or divider elements used solely to display those stats. The heading, subheading, and CTA buttons must remain unchanged.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Sticky header with STC logo (left) and hamburger menu (right) with nav links: Home, Destinations, Packages, About, Contact",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Full-screen hero section with Kerala houseboat sunset background, heading, subheading, and View Packages + WhatsApp Now buttons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Instagram-style horizontally scrollable circular destination highlights (Fort Kochi, Munnar, Alleppey, Thekkady, Varkala, Vagamon, Wayanad) with modal/section on click showing description and highlights",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Packages section with 5 package cards (3N–7N) showing image, name, destinations, nights, inclusions, price, WhatsApp and View Details buttons with collapsible itinerary accordions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Why Choose STC section with icons: Private Cab, Premium Stays, Local Expertise, 24/7 Support, Customized Trips",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Testimonial section with 3 testimonial cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "CTA banner 'Ready to Explore Kerala?' with WhatsApp and Call Now buttons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Footer with STC branding, Fort Kochi address, quick links, WhatsApp/phone placeholders, and Instagram icon",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Mobile features: sticky bottom nav (Home, Packages, WhatsApp, Call), floating WhatsApp button, smooth scroll, fast loading",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "SEO-optimized headings (H1/H2/H3) with Kerala tour package keywords",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Replace current STC logo in the header with the user-provided logo image",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Change hero/cover background image to the user-uploaded houseboat picture",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Remove the '500+ Happy Travellers', '7 Destinations', and '5 Star Review' stats/texts from the hero section",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "STC – South Indian Tour Crafters",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

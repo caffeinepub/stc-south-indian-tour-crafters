@@ -1,0 +1,31 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T09:35:00.048Z",
+  "summary": "The diff modifies the Hero component to use a new background image and removes the stats section. REQ-15 appears fully implemented. REQ-14 is partially implemented — the Hero component references 'hero-houseboat.dim_1920x1080.png' but the spec requires saving the image as 'hero-houseboat.png' (without the dimension suffix), and no evidence exists that the image file was actually added to frontend/public/assets/generated/.",
+  "missing_requirements": [
+    {
+      "id": "REQ-14",
+      "requirement": "Save the uploaded houseboat image as a static asset at frontend/public/assets/generated/hero-houseboat.png",
+      "reason": "The diff shows no new files were added (ADDED FILES: none). The image file at frontend/public/assets/generated/hero-houseboat.png is not present in the diff. Additionally, the Hero component references 'hero-houseboat.dim_1920x1080.png' rather than the required 'hero-houseboat.png' filename.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "The Hero component background image uses the filename 'hero-houseboat.dim_1920x1080.png' instead of the specified 'hero-houseboat.png'.",
+      "reason": "The build request specifies the asset should be saved and referenced as 'hero-houseboat.png', but the implementation uses a different filename with a dimension suffix that was not requested.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.85,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Hero.tsx",
+    "project_state.json"
+  ]
+}

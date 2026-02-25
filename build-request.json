@@ -1,0 +1,62 @@
+{
+  "kind": "build_request",
+  "title": "Update hero background image and remove stats text",
+  "projectName": "STC Kerala Tours",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Save the uploaded houseboat image (Gemini_Generated_Image_ylgl2uylgl2uylgl.png) as a static asset at frontend/public/assets/generated/hero-houseboat.png and update the Hero component to use this new image as the full-screen background, replacing the existing hero background image. Maintain the existing dark overlay for readability.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Change the cover picture to the house boat picture I have uploaded"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded houseboat at-dusk image is saved at frontend/public/assets/generated/hero-houseboat.png",
+        "The Hero component background references the new hero-houseboat.png file",
+        "The dark overlay remains in place so headline and CTA text remain legible",
+        "The hero section still fills the full viewport height"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "In the Hero component, remove the three summary stat items — '500+ Happy Travellers', '7 Destinations', and '5 Star Review' — along with any surrounding container or divider elements used solely to display those stats. The heading, subheading, and CTA buttons must remain unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "remove the 500+ happy travellers, 7 destinations and 5 star review texts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The '500+ Happy Travellers' stat text is no longer visible in the hero section",
+        "The '7 Destinations' stat text is no longer visible in the hero section",
+        "The '5 Star Review' stat text is no longer visible in the hero section",
+        "The H1 heading, subheading, and CTA buttons ('View Packages' and 'WhatsApp Now') remain present and unaffected",
+        "No empty container or ghost spacing is left behind where the stats were"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "Do not alter the hero heading, subheading, or CTA buttons"
+  ],
+  "nonGoals": [
+    "Changing any other section's content or layout",
+    "Modifying the header, footer, packages, destinations, or testimonials sections",
+    "Adding new stats or replacing the removed stats with alternative content"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Use the uploaded file as-is, saving it as the hero background (Gemini_Generated_Image_ylgl2uylgl2uylgl.png > hero-houseboat.dim_1920x1080.png)"
+    ]
+  }
+}

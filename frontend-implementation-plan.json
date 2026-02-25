@@ -1,0 +1,47 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update hero background image and remove stats text",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Replace hero background with uploaded houseboat image and maintain dark overlay",
+      "acceptanceCriteria": [
+        "The uploaded houseboat at-dusk image is saved at frontend/public/assets/generated/hero-houseboat.png",
+        "The Hero component background references the new hero-houseboat.png file",
+        "The dark overlay remains in place so headline and CTA text remain legible",
+        "The hero section still fills the full viewport height"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/hero-houseboat.dim_1920x1080.png",
+          "operation": "create",
+          "description": "Save the uploaded houseboat image (Gemini_Generated_Image_ylgl2uylgl2uylgl.png) as a static asset at this location to serve as the new hero background image"
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update the background image reference to use the new houseboat image at frontend/public/assets/generated/hero-houseboat.dim_1920x1080.png, replacing the existing hero background. Verify that the dark overlay (bg-black/50 or similar) remains applied to ensure text readability and that the hero section maintains its full viewport height styling (min-h-screen or h-screen)"
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Remove three summary stat items from the hero section",
+      "acceptanceCriteria": [
+        "The '500+ Happy Travellers' stat text is no longer visible in the hero section",
+        "The '7 Destinations' stat text is no longer visible in the hero section",
+        "The '5 Star Review' stat text is no longer visible in the hero section",
+        "The H1 heading, subheading, and CTA buttons ('View Packages' and 'WhatsApp Now') remain present and unaffected",
+        "No empty container or ghost spacing is left behind where the stats were"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Remove the three summary stat items displaying '500+ Happy Travellers', '7 Destinations', and '5 Star Review', along with any surrounding container divs, borders, or divider elements used solely to display those stats. Ensure the heading, subheading, and CTA buttons ('View Packages' and 'WhatsApp Now') remain unchanged and that no empty spacing or ghost containers are left behind"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-save-the-uploaded-houseboat-image-gemini-generated-image-ylgl2uylgl2uylgl-png-as-a-static-asset-at-frontend-public-assets-generated-hero-houseboat-png-and-update-the-hero-component-to-use-this-new-image-as-the-full-screen-background-replacing-the-existing-hero-background-image-maintain-the-existing-dark-overlay-for-readability",
+      "featureTitle": "Save the uploaded houseboat image (Gemini_Generated_Image_ylgl2uylgl2uylgl.png) as a static asset at frontend/public/assets/generated/hero-houseboat.png and update the Hero component to use this new image as the full-screen background, replacing the existing hero background image. Maintain the existing dark overlay for readability.",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-the-hero-component-remove-the-three-summary-stat-items-500-happy-travellers-7-destinations-and-5-star-review-along-with-any-surrounding-container-or-divider-elements-used-solely-to-display-those-stats-the-heading-subheading-and-cta-buttons-must-remain-unchanged",
+      "featureTitle": "In the Hero component, remove the three summary stat items — '500+ Happy Travellers', '7 Destinations', and '5 Star Review' — along with any surrounding container or divider elements used solely to display those stats. The heading, subheading, and CTA buttons must remain unchanged.",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
